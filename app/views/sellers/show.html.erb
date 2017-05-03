@@ -1,0 +1,18 @@
+<p>
+  <strong>Name:</strong>
+  <%= @seller.name %>
+</p>
+ 
+<p>
+  <strong>About:</strong>
+  <%= @seller.about %>
+</p>
+
+<h2>Gigs</h2>
+<%= render @seller.gigs %>
+ 
+<h2>Add a Gig:</h2>
+<%= render "gigs/form" %>
+
+<%= link_to 'Back', sellers_path %>
+| <%= link_to 'Edit', edit_seller_path(@seller) %>
